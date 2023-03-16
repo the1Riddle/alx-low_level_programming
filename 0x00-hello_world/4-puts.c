@@ -2,7 +2,7 @@
 
 /**
  * main - the main point,main
- * return: outvalue
+ * return: the output (success)
  */
 
 int main(void)
