@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - the main
- * return - 0
+ * main - the main point,main
+ * return: outvalue
  */
 
 int main(void)
