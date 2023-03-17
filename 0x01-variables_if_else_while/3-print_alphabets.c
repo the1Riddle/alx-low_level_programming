@@ -1,16 +1,23 @@
 #include <stdio.h>
 /**
  * main - The entry point
- * Description: prints the alphabet in lowercase
- * Return: usually 0
+ * Description: outputs lowercase and uppercase
+ i* Return: usually 0
  */
 int main(void)
 {
-	int lc = 122;
+	int lc = 97;
+	int uc = 65;
 
 	while (lc <= 122)
 	{
 		putchar(lc);
+		lc++;
+	}
+	while (uc <= 90)
+	{
+		putchar(uc);
+		uc++;
 	}
 	putchar('\n');
 	return (0);
