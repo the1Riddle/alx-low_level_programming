@@ -13,7 +13,6 @@ int main(void)
 		if (lc == 101 || lc == 113)
 		{
 			continue;
-			lc++;
 		}
 		putchar(lc);
 		lc++;
