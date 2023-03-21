@@ -1,22 +1,15 @@
 #include <stdio.h>
 /**
  * main - The entry point
- * Description: prints the alphabet in lowercase except q and e
+ * Description: prints alphabets excluding e and q
  * Return: usually 0
  */
 int main(void)
 {
-	int lc = 97;
-
-	while (lc <= 122)
+	for (int lc = 97; lc <= 122; lc++)
 	{
-		if (lc == 101 || lc == 113)
-		{
-			continue;
-		}
+		if (lc != 101 && lc != 113)
 		putchar(lc);
-		lc++;
 	}
-	putchar('\n');
 	return (0);
 }
