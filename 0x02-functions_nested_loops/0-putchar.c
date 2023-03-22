@@ -1,8 +1,9 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - The entry point
  * Description: prints _putchar followed by a new line
- * Return: usually 0
+ * Return: On success 1.
  */
 int main(void)
 {
@@ -15,5 +16,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
