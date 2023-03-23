@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - The entry point
- * Description: check if numbers are 0 - 9 
+ * Description: check if numbers are 0 - 9
  * @c: char to be checked
  *
  * Return: 0 or 1
