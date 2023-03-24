@@ -13,5 +13,6 @@ void print_times_table(int n);
 int print_sign(int n);
 int _abs(int);
 int print_last_digit(int);
+int _isalpha(int c);
 
 #endif
