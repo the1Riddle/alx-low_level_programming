@@ -8,7 +8,7 @@
  * Description: this function that prints a buffer
  * with the content of size bytes of the buffer pointed by b and
  * The output that prints 10 bytes per line.
- * 
+ *
  *
  * Return: void
  */
