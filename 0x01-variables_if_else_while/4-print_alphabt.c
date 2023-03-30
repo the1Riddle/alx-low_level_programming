@@ -7,10 +7,16 @@
  */
 int main(void)
 {
-	for (int lc = 97; lc <= 122; lc++)
+	int lc;
+
+	lc = 96;
+	while (lc <= 121)
 	{
+		lc++;
 		if (lc != 101 && lc != 113)
-		putchar(lc);
+		{
+			putchar(lc);
+		}
 	}
 	putchar('\n');
 	return (0);
