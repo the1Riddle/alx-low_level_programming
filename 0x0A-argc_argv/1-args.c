@@ -8,6 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
+	(void) argv
+		/* the programe ignores argv because its un used */
 	printf("%d\n", argc - 1);
 	return (0);
 }
