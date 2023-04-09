@@ -4,12 +4,12 @@
  * @argc: number of arguments
  * @argv: array of arguments
  *
+ * Description: void is used to ignores argv because its un used
  * Return: usually 0
  */
 int main(int argc, char *argv[])
 {
-	(void) argv
-		/* i used void to ignores argv because its un used */
+	(void) argv;
 	printf("%d\n", argc - 1);
 
 	return (0);
