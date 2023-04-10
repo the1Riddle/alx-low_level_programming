@@ -21,8 +21,8 @@ char *_strstr(char *haystack, char *needle)
 		if (*b == '\0')
 		{
 			return (haystack);
-			haystack++;
 		}
+		haystack++;
 	}
 	return (NULL);
 }
