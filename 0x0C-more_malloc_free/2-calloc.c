@@ -15,7 +15,6 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[a] = b;
 	}
-
 	return (s);
 }
 
@@ -24,7 +23,7 @@ char *_memset(char *s, char b, unsigned int n)
  * @nmemb: number of elements in the array
  * @size: size of each element
  *
- * Return: pointer to allocated memory
+ * Return: pointer to allocated memory or NULL If malloc fails
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
