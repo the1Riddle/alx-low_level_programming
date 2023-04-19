@@ -8,8 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int a = 0;
 	char *arr;
+	int a;
 
 	if (argc != 2)
 	{
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 
 	arr = (char *)main;
 
-	while (a < bytes)
+	for (a = 0; a < bytes; a++)
 	{
 		if (a == bytes - 1)
 		{
