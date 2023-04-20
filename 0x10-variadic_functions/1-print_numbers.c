@@ -24,7 +24,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 	}
 
-	_putchar("\n");
+	_putchar('\n');
 
 	va_end(nms);
 }
