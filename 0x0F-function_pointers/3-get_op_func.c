@@ -6,7 +6,7 @@
  * Description: This function returns a pointer to the function,
  * that corresponds to the operator given as a parameter
  *
- * Return: NULL if s does not match of +, -, *, /, % 
+ * Return: NULL if s does not match of +, -, *, /, %
  */
 int (*get_op_func(char *s))(int, int)
 {
