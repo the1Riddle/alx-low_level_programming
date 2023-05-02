@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * free_listint2 - frees list
  * @head: pointer to listint_t
@@ -12,8 +12,11 @@ void free_listint2(listint_t **head)
 
 	while (head == NULL)
 	{
-		frii = head->next;
+		frii = (*head)->next;
 		free(head);
-		head = frii;
+		*head = frii;
+
+		return;
 	}
+	*head = NULL;
 }
