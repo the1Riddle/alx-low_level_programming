@@ -14,7 +14,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int working, exlsv;
 
 	exlsv = n ^ m;
-	for (a = 63; a > 0; a--)
+	for (a = 0; a <= 63; a++)
 	{
 		working = exlsv >> a;
 		if (working & 1)
