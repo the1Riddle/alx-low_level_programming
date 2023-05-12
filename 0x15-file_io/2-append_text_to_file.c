@@ -23,7 +23,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	bytesW = write(fd, text_content, strlen(text_content));
 	close(fd);
 
-	if (bytesW == -1)
+	if (bytesW == -1 || bytesW != (ssize_t)strlen(text_content))
 	{
 		return (-1);
 	}
