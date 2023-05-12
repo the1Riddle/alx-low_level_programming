@@ -15,7 +15,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	int fd;
 	ssize_t bytesW;
 
-	if (text_content == NULL || filename == NULL)
+	if (filename == NULL)
 	{
 		return (-1);
 	}
@@ -24,15 +24,15 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	if (strlen(text_content) > 0)
+	if (text_content != NULL && strlen(text_content) > 0)
 	{
 		bytesW = write(fd, text_content, strlen(text_content));
-		close(fd);
 		if (bytesW == -1)
 		{
 			return (-1);
+			close(fd);
 		}
 	}
-	
+	close(fd);
 	return (1);
 }
