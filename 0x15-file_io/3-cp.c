@@ -50,14 +50,16 @@ int main(int argc, char *argv[])
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s\n",
+				argv[1]);
 		exit(98);
 	}
 
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (file_to == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE %s\n",
+				argv[2]);
 		exit(99);
 	}
 
