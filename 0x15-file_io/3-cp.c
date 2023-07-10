@@ -53,7 +53,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-
 	file_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (file_to == -1)
 	{
@@ -77,6 +76,5 @@ int main(int argc, char *argv[])
 	}
 	close_file(file_from);
 	close_file(file_to);
-
 	return (0);
 }
