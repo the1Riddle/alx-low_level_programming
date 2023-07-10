@@ -11,7 +11,7 @@ void close_file(int fd)
 
 	if (result == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %s\n", fd);
 		exit(100);
 	}
 }
@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to %s\n");
 		exit(97);
 	}
 
