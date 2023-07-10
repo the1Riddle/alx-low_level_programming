@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#define BUFF_SIZE 1024
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
