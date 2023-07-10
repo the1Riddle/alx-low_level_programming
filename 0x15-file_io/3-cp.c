@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 	{
 		if (bytesr == 0)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 		bytesW = write(file_to, buff, bytesR);
@@ -76,5 +76,6 @@ int main(int argc, char *argv[])
 	}
 	close_file(file_from);
 	close_file(file_to);
+
 	return (0);
 }
