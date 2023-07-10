@@ -62,11 +62,6 @@ int main(int argc, char *argv[])
 	}
 	while ((bytesR = read(file_from, buff, BUFF_SIZE)) > 0)
 	{
-		if (bytesr == 0)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-			exit(98);
-		}
 		bytesW = write(file_to, buff, bytesR);
 		if (bytesW != bytesR)
 		{
