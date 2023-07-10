@@ -65,8 +65,8 @@ int main(int argc, char *argv[])
 		bytesW = write(file_to, buff, bytesR);
 		if (bytesW != bytesR)
 		{
-			dprintf(STDERR_FILENO, "%s\n", argv[2]);
-			exit(1);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
 		}
 	}
 
