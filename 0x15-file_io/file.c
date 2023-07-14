@@ -65,7 +65,7 @@ void print_info(unsigned char *e_ident)
 	}
 	write_str(STDOUT_FILENO, "\n");
 	write_str(STDOUT_FILENO, osabi_msg);
-	if (e_ident[EI_OSABI] >= ELFOSABI_NONE && e_ident[EI_OSABI] < ELFOSABI_STANDALONE)
+	if (e_ident[EI_OSABI] > ELFOSABI_NONE && e_ident[EI_OSABI] < ELFOSABI_STANDALONE)
 		write_str(STDOUT_FILENO, osabi_strings[e_ident[EI_OSABI]]);
 	else
 	{
