@@ -20,5 +20,7 @@ int main(int argc, char *argv[]);
 void check_elf(unsigned char *e_ident);
 void print_info(unsigned char *e_ident);
 void close_elf(int elf);
+void write_str(int fd, const char *str);
+void write_hex(int fd, unsigned char value);
 
 #endif
