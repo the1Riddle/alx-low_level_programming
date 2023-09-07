@@ -42,7 +42,7 @@ The following is the data structures used for this project:
 ## Python Dictionaries
 
 Python dictionaries are implemented using hash tables. This project able to better understand the power <br>
-and simplicity of Python dictionaries. So much is actually happening when you type d = {'a': 1, 'b': 2},
+and simplicity of Python dictionaries. So much is actually happening when you type d = {'a': 1, 'b': 2},<br>
 but everything will look so simple for the user. <br>
 Python doesn’t use the exact same implementation than the one that is worked on today though. <br>
 If you are curious on how it works under the hood, here is a good blog post about how dictionaries <br>
