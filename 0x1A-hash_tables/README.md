@@ -2,12 +2,10 @@
 
 This project is about Hash tables in C programming
 
-## More Info
-
 Data Structures
 ---------------
 
-The following is the data structures used for this project:
+The following data structures is used for this project:
 
 	/**
 	 * struct hash_node_s - Node of a hash table
