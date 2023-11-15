@@ -5,7 +5,7 @@ This project is about Hash tables in C programming
 Data Structures
 ---------------
 
-The following data structures is used for this project:
+The following data structures are used for this project:
 
 	/**
 	 * struct hash_node_s - Node of a hash table
@@ -41,10 +41,10 @@ The following data structures is used for this project:
 
 Python dictionaries are implemented using hash tables. This project able to better understand the power <br>
 and simplicity of Python dictionaries. So much is actually happening when you type d = {'a': 1, 'b': 2},<br>
-but everything will look so simple for the user. <br>
-Python doesn’t use the exact same implementation than the one that is worked on today though. <br>
-If you are curious on how it works under the hood, here is a good blog post about how dictionaries <br>
+but everything will look so simple to the user. <br>
+Python doesn’t use the exact same implementation as the one that is worked on today though. <br>
+If you are curious about how it works under the hood, here is a good blog post about how dictionaries <br>
 are implemented in Python 2.7 (not mandatory).
 
- <b> Note: <b> that all dictionaries are not implemented using hash tables and there is a difference between <br>
+ **Note:** that all dictionaries are not implemented using hash tables and there is a difference between <br>
 a dictionary and a hash table. Read more here (not mandatory).
