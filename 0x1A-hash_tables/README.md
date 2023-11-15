@@ -46,5 +46,6 @@ Python doesn’t use the exact same implementation as the one that is worked on 
 If you are curious about how it works under the hood, here is a good blog post about how dictionaries <br>
 are implemented in Python 2.7 (not mandatory).
 
- **Note:** that all dictionaries are not implemented using hash tables and there is a difference between <br>
-a dictionary and a hash table. Read more here (not mandatory).
+ **Note:** 
+ > that all dictionaries are not implemented using hash tables and there is a difference between <br>
+ > a dictionary and a hash table. Read more here (not mandatory).
