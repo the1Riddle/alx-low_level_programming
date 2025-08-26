@@ -36,3 +36,4 @@ The files containing Big O notation are writen in this format:
 - log(n) -> O(log(n))
 - n * log(n) -> O(nlog(n))
 - ...
+  
