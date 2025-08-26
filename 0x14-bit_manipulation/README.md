@@ -1,3 +1,3 @@
-#!/bin/bash
+# Bit manipulation
 this project is about Bit manipulation
 in C programming
