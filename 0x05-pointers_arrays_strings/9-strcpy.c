@@ -11,6 +11,11 @@ char *_strcpy(char *dest, char *src)
 	int l = 0;
 	int x = 0;
 
+	if (dest == NULL || src == NULL)
+	{
+		return (dest);
+	}
+
 	while (*(src + l) != '\0')
 	{
 		l++;

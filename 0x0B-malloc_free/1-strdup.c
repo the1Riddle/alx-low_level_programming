@@ -28,10 +28,11 @@ char *_strdup(char *str)
 	{
 	return (NULL);
 	}
-	while (a <= len)
+	while (a < len)
 	{
 		dup_str[a] = str[a];
 		a++;
 	}
+	dup_str[len] = '\0';
 	return (dup_str);
 }
