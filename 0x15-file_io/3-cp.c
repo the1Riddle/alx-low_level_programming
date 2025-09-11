@@ -59,7 +59,8 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	do {
+	while (bytesR > 0)
+	{
 		bytesR = read(file_from, buff, BUFF_SIZE);
 		if (bytesR == -1)
 		{
@@ -72,7 +73,7 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
-	} while (bytesR > 0);
+	}
 	close_file(file_from);
 	close_file(file_to);
 	return (0);

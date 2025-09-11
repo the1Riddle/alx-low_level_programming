@@ -9,9 +9,6 @@ int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
 
-	if (s == NULL)
-		return (0);
-
 	i = 0;
 	d = 0;
 	n = 0;
