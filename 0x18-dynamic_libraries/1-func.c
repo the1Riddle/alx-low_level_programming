@@ -25,6 +25,9 @@ int _strlen(char *s)
 {
 	int longi = 0;
 
+	if (s == NULL)
+		return (0);
+
 	while (*s != '\0')
 	{
 		longi++;
@@ -41,6 +44,9 @@ int _strlen(char *s)
  */
 void _puts(char *str)
 {
+	if (str == NULL)
+		return;
+
 	while (*str != '\0')
 	{
 		_putchar(*str++);
@@ -59,6 +65,11 @@ char *_strcpy(char *dest, char *src)
 {
 	int l = 0;
 	int x = 0;
+
+	if (dest == NULL || src == NULL)
+	{
+		return (dest);
+	}
 
 	while (*(src + l) != '\0')
 	{
@@ -81,6 +92,9 @@ char *_strcpy(char *dest, char *src)
 int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
+
+	if (s == NULL)
+		return (0);
 
 	i = 0;
 	d = 0;
