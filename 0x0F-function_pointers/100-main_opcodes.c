@@ -31,10 +31,10 @@ int main(int argc, char *argv[])
 	{
 		if (a == bytes - 1)
 		{
-			printf("%02hhx\n", arr[a]);
+			printf("%02hhx", (unsigned char)arr[a]);
 			break;
 		}
-		printf("%02hhx ", arr[a]);
+		printf("%02hhx ", (unsigned char)arr[a]);
 	}
 	return (0);
 }

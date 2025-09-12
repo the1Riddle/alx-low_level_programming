@@ -18,7 +18,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hT->size = size;
 	hT->array = malloc(sizeof(hash_node_t *) * size);
 	if (hT->array == NULL)
+	{
+		free(hT);
 		return (NULL);
+	}
 	for (i = 0; i < size; i++)
 		hT->array[i] = NULL;
 
